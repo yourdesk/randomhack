@@ -1,0 +1,1 @@
+const r=Math.random;function randBias(a,b,d,e){function f(a){return 1*Math.exp(-(a-50)*(a-50)/(2*g*g))}var g=e,c=Math.floor(101*r()),h=Math.floor(r()*(b-a+1))+a;return h>d?h+Math.floor(f(c)*(d-h)):h-Math.floor(f(c)*(h-d))}Math.random=function(){return randBias(0,1e4,1,15)};
